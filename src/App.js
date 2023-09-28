@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import FormikForm from './FormikForm';
+import FormikForm2 from './FormikForm2';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* In this Component i used Formik and Yup in one file  */}
+      <FormikForm />
+      {/* In this Component I used Formik and Yup in separate file */}
+      {/* <FormikForm2 /> */}
     </div>
   );
 }
